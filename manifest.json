@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Comment Blocker",
+    "version": "1.0",
+    "description": "Hide YouTube Comments",
+    "content_scripts": [
+        {
+            "matches": ["*://*.youtube.com/*"],
+            "css": ["styles.css"],
+            "js": ["content.js"]
+        }
+    ],
+    "permissions": ["activeTab"]
+}
